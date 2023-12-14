@@ -160,6 +160,18 @@ message ModuleConfig {
   }
 
   /*
+   * Heartbeat Config
+   */
+   message HeartbeatConfig {
+    /*
+     * Whether the Module is enabled
+     */
+    bool enabled = 1;
+
+  }
+
+
+  /*
    * Audio Config for codec2 voice
    */
   message AudioConfig {
@@ -713,6 +725,10 @@ message ModuleConfig {
      * TODO: REPLACE
      */
     DetectionSensorConfig detection_sensor = 12;
+    /*
+     * TODO: REPLACE
+     */
+    HeartbeatConfig heartbeat = 13;
   }
 }
 
